@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>پنل مدیریت بیمه</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #0f172a;
+      color: #fff;
+    }
+
+    header {
+      background: #111827;
+      padding: 18px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 16px;
+      border-radius: 14px;
+      margin: 12px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .title {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #e2e8f0;
+    }
+
+    a.button {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    a.button:hover {
+      background: #1d4ed8;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 6px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  ⚙️ پنل مدیریت خدمات بیمه
+</header>
+
+<div class="container">
+
+  <!-- DATABASE -->
+  <div class="card">
+    <div class="title">📊 دیتابیس درخواست‌ها</div>
+    <div class="note">تمام فرم‌های پر شده اینجا ذخیره می‌شود</div>
+
+    <a class="button" href="https://docs.google.com/spreadsheets/d/1dthmo2cLAQidWeTSjzJDdJYMgJ5IVz2IprwzvN_I83w/edit" target="_blank">
+      ورود به Google Sheets
+    </a>
+  </div>
+
+  <!-- FORMS -->
+  <div class="grid">
+
+    <div class="card">
+      <div class="title">🚗 استعلام بیمه</div>
+      <a class="button" href="https://forms.gle/SH8GGHCchAe59wbN7" target="_blank">
+        باز کردن فرم
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="title">📄 ثبت خسارت</div>
+      <a class="button" href="#" target="_blank">
+        اضافه شود
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="title">🔄 تمدید بیمه</div>
+      <a class="button" href="#" target="_blank">
+        اضافه شود
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="title">📝 صدور بیمه</div>
+      <a class="button" href="#" target="_blank">
+        اضافه شود
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="title">📞 درخواست تماس</div>
+      <a class="button" href="#" target="_blank">
+        اضافه شود
+      </a>
+    </div>
+
+  </div>
+
+  <!-- STATUS -->
+  <div class="card">
+    <div class="title">📌 وضعیت سیستم</div>
+    <div class="note">
+      سیستم شما کاملاً فعال است و بدون سرور روی Google + GitHub اجرا می‌شود.
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
